@@ -17,3 +17,5 @@ print(round(8 / 3, 2)) # it rounds off the number after 2 decimal points
 print(4 / 2) # this is going to be 2.0 because if you TypeCheck it, it will be float
 
 print(4 // 2) # this is a floor division if you TypeCheck it, it will be int
+
+
