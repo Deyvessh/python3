@@ -1,5 +1,5 @@
 
-int_height = int(input("Please, Enter your height in CM: "))
+int_height = int(input("Please, Enter your height in Centimeters: "))
 
 
 if (int_height >= 120):
@@ -26,7 +26,7 @@ if (int_height >= 120):
         else:
             print("You final ticket for Ride is: $5")    
 else:
-    print("Sorry, you can't ride (You should be atleast 120 CM in height)")
+    print("Sorry, you can't ride (You should be atleast 120 Centimeters in height)")
     
     
     
