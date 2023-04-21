@@ -54,6 +54,7 @@ print("\n")
 game_list = ["rock", "paper", "scissors"]
 game_list_random = random.choice(game_list)
 
+
 if game_list_random == "rock":
     print("Computer's choice is Rock \n")
     print(rock)
@@ -62,10 +63,13 @@ elif game_list_random == "paper":
     print("Computer's choice is Paper \n")
     print(paper)
     
-else:
+elif game_list_random == "scissors":
     game_list_random == "scissors"
     print("Computer's choice is Scissors \n")
     print(scissors)
+    
+else:
+    print("Wrong Input")
     
     
 
@@ -85,10 +89,10 @@ elif play == 0 and game_list_random == "rock":
     print("Match draw")
     
 elif play == 1 and game_list_random == "rock":
-    print("You lose")
+    print("You win")
     
 elif play == 1 and game_list_random == "scissors":
-    print("You win")
+    print("You lose")
     
 elif play == 1 and game_list_random == "paper":
     print("Match draw")
