@@ -125,5 +125,80 @@ while not at_goal():
     phase()
  
 
+# Hurdle 3
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+def phase():
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+
+while at_goal() != True: 
+    if front_is_clear() == True: 
+        move()
+    elif wall_in_front() == True: 
+        phase()
+        
+        
+        
+# Hurdle 4
+
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+def phase():
+    turn_left()
+    
+    while wall_on_right() == True:
+        move()
+    
+    turn_right()
+    move()
+    turn_right()
+    
+    while front_is_clear() == True:
+        move()
+    
+    turn_left()
+        
+ 
+while at_goal() != True:
+    if front_is_clear() == True:
+        move()
+    elif wall_in_front() == True:
+        phase()
+
+ 
+ # Maze
+ 
+ 
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+while at_goal() != True:
+    if right_is_clear():
+        turn_right()
+        move()
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()
+        
+
+        
+        
 
 
